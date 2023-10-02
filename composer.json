@@ -1,0 +1,18 @@
+{
+    "descrição": "projeto mvcadm",
+    "authors": [{
+            "name": "Claudio Rodrigues",
+            "email": "claudiona@dev.com.br"
+           
+        }],
+    "autoload": {
+        "psr-4":{
+            "Core\\": "core",
+            "App\\": "app",
+            "Adms\\":"app/adms"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    }
+}

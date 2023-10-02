@@ -1,0 +1,5 @@
+ 001; erro de conecção com o banco.
+002: Erro no nome do metodo da pagina.
+003: Erro do arquiva configView/ redirecionamente da url.
+003.1 Erro no metodo viewlogin da configview
+004: Erro de execução de leitura de dados em uma tabela

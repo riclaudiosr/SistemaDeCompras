@@ -1,0 +1,23 @@
+# Documentação: https://httpd.apache.org/docs/2.4/rewrite/flags.html
+# modolo q faz a rescrita da url
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond define uma condição para uma regra, tomando por base o filisytem do sistema da maquina não da ospedagem.
+# RewriteCond %{REQUEST_FILENAME} !-d, informa que será criada uma condição a ser aplicada ao nome do diretório. a esclamação e um sinal de negação e -d pede para verificar a existencia do diretório, 
+RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-f, informa que será criada uma condição a ser aplicada ao nome do arquivo requisitado. -f pede para verificar a existencia de um diretorio fisico. condição se o arquivo requisitado não existir fisicamente.
+
+RewriteCond %{REQUEST_FILENAME} !-l
+# ewriteCond %{REQUEST_FILENAME} !-l,informa que será criada uma condição a ser aplicada ao link sibólico requisitado, -1 pede para verificar a existençia de um link simbolico.
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+# index.php?url=users/index
+# QSA significa que se houver uma string de consulta passada com a url ela sera anesada a rescrita
+
+#quando houvar o erro 403 que o usuário tentou acessar a lista de diretório
+
+#ErrorDocument 403 https://  .com.br
+
+#bloquer a opsão de listar os arquivos do diretório
+Options -Indexes

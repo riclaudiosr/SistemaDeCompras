@@ -1,0 +1,147 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@1,400;1,500;1,700&display=swap');
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    :root{
+        
+        --corVermelha:#ff0000;
+        --corPretaTransparente:#04071475;
+        --corBranca:#fff;
+        --corAzul:#0063e5;
+        --corAzulEscuro:#08132f;
+        --corPreta:#090b13;
+        --corVerde: #0c630d;
+        --corSinza:#808080;
+        --corSinzaClaro:#c4bbbb;
+        --corMarrom:#661919;
+        
+        
+        
+        --font01:'Ubuntu', sans-serif;
+        --font02:'Poppins', sans-serif;
+        --font03:'Oswald', sans-serif;
+        --font04:'Indie Flower', cursive;
+    }
+
+
+.contener-login span{
+    color:var(--corBranca);
+    font-weight: 800;
+}
+
+.d-flex{
+    background-color: var(--corSinza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+ .contener-login{
+    font-family: var(--font03);
+    width: 350px;
+    display: flex;
+    flex-direction:row;
+    margin: 0 5px;
+
+}
+.wrapper-login{
+    width: 100%;
+    background-color:var(--corAzulEscuro);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 1);
+
+}
+.wrapper-login .title{
+    height: 90px;
+    background-color: var(--main-bg-color);
+    border-radius:5px 5px 0 0;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.wrapper-login .form-login{
+    padding: 25px;
+    background-color:var(--corSinzaClaro);
+
+}
+.wrapper-login .form-login .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.wrapper-login .form-login .button{
+    height: 45px;
+    margin-bottom: 15px;
+    }
+.wrapper-login .form-login .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid var(--active-color);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.form-login .row input::placeholder{
+   color: var(--third-color);
+}
+.wrapper-login .form-login .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: var(--main-color);
+    font-size: 18px;
+    background-color: var(--second-bg-color);
+    border: 1px solid var(--active-color);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-login .form-login .button{
+      background-color: var(--corSinza);
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: var(--main-color);
+    font-size: 20px; 
+    border: 1px solid var(--active-color);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.form-login .button:hover{
+    background-color: var(--corVerde);
+    color: var(--corBranca);
+    transition: all 0.3s ease;
+    
+
+}
+.slink {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.slink a,.button{
+    color: var(--corAzulEscuro);
+    margin: 2px 10px;
+    padding: 2px;
+    background-color: var(--corSinza);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.slink a:button,a:hover{
+    background-color: var(--corVerde);
+    color: var(--corBranca);
+    transition: all 0.3s ease;
+}
